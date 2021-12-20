@@ -1,6 +1,6 @@
 ARG SONARQUBE_VERSION
 
-FROM openjdk:11-jdk-slim as builder
+FROM openjdk:17-ea-22 as builder
 
 COPY . /home/build/project
 WORKDIR /home/build/project
